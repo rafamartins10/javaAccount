@@ -1,0 +1,47 @@
+package entities;
+
+public class AccountPrivate {
+
+	private double account;
+	private String holder;
+	private double deposit;
+
+	public AccountPrivate(double account, String holder) {
+		this.account = account;
+		this.holder = holder;	
+	}
+
+	public AccountPrivate(double account, String holder, double deposit) {
+		this.account = account;
+		this.holder = holder;
+		this.deposit = deposit;
+	}
+
+	public double getAccount() {
+		return account;
+	}
+
+	public String getName() {
+		return holder;
+	}
+
+	public void setName(String holder) {
+		this.holder = holder;
+	}
+
+	public double getDeposit() {
+		return deposit;
+	}
+	
+	public void depositMore(double amount) {
+		
+		deposit += amount;
+		
+	}
+	
+	public void withDraw(double amount) {
+		
+		deposit -= amount + 5.0;
+	}
+
+}

@@ -1,0 +1,30 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.AccountPrivate;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		double account = sc.nextDouble();
+		
+		String name = sc.nextLine();
+		
+		double deposit = sc.nextDouble();
+		
+		AccountPrivate ap = new AccountPrivate(double account, String name, double deposit) {
+		}
+		
+		
+		
+		
+		sc.close();
+	}
+
+}
